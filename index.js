@@ -1,5 +1,9 @@
-const button = document.querySelector('button');
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.querySelector('.boton');
+    let counter = 0;
 
-button.addEventListener('click', () => {
-    console.log('Event');
+    button.addEventListener('click', () => {
+        counter++
+        console.log(`click: ${ counter }`)
+    })
 })
